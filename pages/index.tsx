@@ -1,9 +1,5 @@
-import Layout from "components/Layout";
+import HomeContainer from "../src/containers/Home"
 
 export default function IndexPage() {
-    return (
-        <Layout>
-            <div className="text-red-100 font-label text-2xl">Hello, Gengs!</div>
-        </Layout>
-    )
+    return <HomeContainer/>
 }
