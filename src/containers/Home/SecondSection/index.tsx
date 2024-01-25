@@ -1,10 +1,22 @@
 import React from "react";
 
-const SecondSection = ()=>{
-    return(
-        <div>
+import Container from "components/Container";
+import PromoCarousel from "containers/Home/SecondSection/PromoCarousel";
+import Package from "containers/Home/SecondSection/Package";
+import Categories from "containers/Home/SecondSection/Categories";
 
-        </div>
+import styles from "./SecondSection.module.css"
+import 'react-multi-carousel/lib/styles.css'
+
+const SecondSection = () => {
+    return (
+        <section className={styles.section}>
+            <Container>
+                <PromoCarousel/>
+                <Package/>
+                <Categories/>
+            </Container>
+        </section>
     )
 }
 
