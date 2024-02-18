@@ -7,6 +7,7 @@ import Categories from "containers/Home/SecondSection/Categories";
 
 import styles from "./SecondSection.module.css"
 import 'react-multi-carousel/lib/styles.css'
+import Testimonials from "containers/Home/SecondSection/Testimonials";
 
 const SecondSection = () => {
     return (
@@ -15,6 +16,7 @@ const SecondSection = () => {
                 <PromoCarousel/>
                 <Package/>
                 <Categories/>
+                <Testimonials/>
             </Container>
         </section>
     )
