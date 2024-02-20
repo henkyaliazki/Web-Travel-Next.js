@@ -5,12 +5,14 @@ import Footer from "components/Layout/Footer";
 
 type Props = {
     children: ReactNode
+    noFooter?: boolean
 }
-const Layout = ({children}: Props) => {
+const Layout = ({children, noFooter = false}: Props) => {
     return (
         <>
             <Header/>
             {children}
+            {noFooter ? null : <Footer/>}
             <Footer/>
         </>
     )
